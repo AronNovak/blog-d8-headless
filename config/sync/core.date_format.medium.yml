@@ -1,0 +1,10 @@
+uuid: 3ca1e0d6-8ff6-45c9-884c-3cabe05c37af
+langcode: hu
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
+id: medium
+label: 'Alapértelmezett közepes dátum'
+locked: false
+pattern: 'Y. m. d., D - H:i'

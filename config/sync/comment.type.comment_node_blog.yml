@@ -1,0 +1,8 @@
+uuid: 26ee246a-0ace-4bb1-9014-fef14dc3ab42
+langcode: hu
+status: true
+dependencies: {  }
+id: comment_node_blog
+label: 'Blogbejegyzés comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,21 @@
+uuid: 36a4836d-d28f-4354-ab2c-7ef4843d4f6a
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_6
+    - node.type.image
+id: node.image.taxonomy_vocabulary_6
+field_name: taxonomy_vocabulary_6
+entity_type: node
+bundle: image
+label: 'Szabad címkék '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

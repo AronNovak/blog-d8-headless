@@ -1,0 +1,8 @@
+uuid: fb3027ec-33d9-49a9-98a1-e1fd2fb039b7
+langcode: hu
+status: true
+dependencies: {  }
+id: comment_node_image
+label: 'Image comment'
+target_entity_type_id: node
+description: null

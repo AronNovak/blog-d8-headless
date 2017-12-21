@@ -1,0 +1,18 @@
+uuid: c2ad37dc-bf46-4246-8cce-2dff255b6e3e
+langcode: hu
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: Blogbejegyzés
+type: blog
+description: 'Többfelhasználós bloghoz használható. Minden felhasználó személyes blogot kap.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

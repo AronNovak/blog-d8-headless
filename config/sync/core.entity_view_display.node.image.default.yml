@@ -1,0 +1,78 @@
+uuid: c9518079-ade5-4176-8af3-562498120cd8
+langcode: hu
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_image.default
+    - field.field.node.image.body
+    - field.field.node.image.comment_node_image
+    - field.field.node.image.field_img
+    - field.field.node.image.node_image
+    - field.field.node.image.taxonomy_vocabulary_6
+    - field.field.node.image.upload
+    - node.type.image
+  module:
+    - comment
+    - file
+    - image
+    - text
+    - user
+id: node.image.default
+targetEntityType: node
+bundle: image
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_image:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_img:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  node_image:
+    label: hidden
+    weight: 3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

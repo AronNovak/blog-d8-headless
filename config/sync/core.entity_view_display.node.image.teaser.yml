@@ -1,0 +1,55 @@
+uuid: a311f68d-c5b0-447f-a8a8-29a6782299be
+langcode: hu
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.image.body
+    - field.field.node.image.comment_node_image
+    - field.field.node.image.field_img
+    - field.field.node.image.node_image
+    - field.field.node.image.taxonomy_vocabulary_6
+    - field.field.node.image.upload
+    - node.type.image
+  module:
+    - image
+    - text
+    - user
+id: node.image.teaser
+targetEntityType: node
+bundle: image
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  node_image:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_6:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_image: true
+  field_img: true
+  langcode: true
+  upload: true

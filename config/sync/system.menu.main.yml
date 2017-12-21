@@ -1,0 +1,10 @@
+uuid: 5e8e0c9c-899d-4688-9719-b91e9b0225a2
+langcode: hu
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Main menu'
+description: 'Primary links are often used at the theme layer to show the major sections of a site. A typical representation for primary links would be tabs along the top.'
+locked: true

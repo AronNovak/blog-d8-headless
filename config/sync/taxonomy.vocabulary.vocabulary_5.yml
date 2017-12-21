@@ -1,0 +1,9 @@
+uuid: 9a4eeba9-7d8b-4842-89e4-c3a3650a5e8d
+langcode: hu
+status: true
+dependencies: {  }
+name: Irodalom
+vid: vocabulary_5
+description: ''
+hierarchy: 0
+weight: 0

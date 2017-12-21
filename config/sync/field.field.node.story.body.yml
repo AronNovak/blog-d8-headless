@@ -1,0 +1,22 @@
+uuid: 30235eeb-46dd-45ae-bff3-4e33c324d240
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.story
+  module:
+    - text
+id: node.story.body
+field_name: body
+entity_type: node
+bundle: story
+label: Törzs
+description: 'Az írások a legegyszerűbb tartalom formák: rendelkeznek címmel, bevezetővel és hosszabb tartalommal, de különböző modulok kiterjeszthetik a képességeit. A bevezető a hosszabb tartalom első része. Az írások felhasználhatóak személyes blog írásra, híreknek, cikkeknek egyaránt.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,15 @@
+uuid: bb4e6a1b-6682-4bb8-90c6-0a3e060853f3
+langcode: hu
+status: true
+dependencies: {  }
+name: twitter-input
+format: '5'
+weight: 0
+filters:
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 10
+    settings:
+      filter_url_length: 72

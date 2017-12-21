@@ -1,0 +1,9 @@
+uuid: e2e454bf-fcf5-4711-966f-d457dc022385
+langcode: hu
+status: true
+dependencies: {  }
+name: Drupal
+vid: vocabulary_4
+description: 'a kedvenc CMS-em'
+hierarchy: 0
+weight: 0

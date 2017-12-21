@@ -1,0 +1,34 @@
+uuid: dde2b655-fd89-4808-8c12-1ec82e84453d
+langcode: hu
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.blog.body
+    - field.field.node.blog.comment_node_blog
+    - field.field.node.blog.taxonomy_vocabulary_6
+    - field.field.node.blog.upload
+    - node.type.blog
+  module:
+    - file
+    - user
+id: node.blog.rss
+targetEntityType: node
+bundle: blog
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_blog: true
+  langcode: true
+  taxonomy_vocabulary_6: true

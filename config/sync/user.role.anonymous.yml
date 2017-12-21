@@ -1,0 +1,20 @@
+uuid: 6b159d4d-83b7-4f00-93ac-28dcaa41d2c7
+langcode: hu
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format 1'
+  - 'use text format 4'
+  - 'view original images'
+  - 'view simplemenu'
+  - 'view uploaded files'

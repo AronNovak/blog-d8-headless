@@ -1,0 +1,26 @@
+uuid: e6b71cf8-715c-4deb-980f-6efeb5d0d3cb
+langcode: hu
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_image
+    - field.field.comment.comment_node_image.comment_body
+  module:
+    - text
+id: comment.comment_node_image.default
+targetEntityType: comment
+bundle: comment_node_image
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

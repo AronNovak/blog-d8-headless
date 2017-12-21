@@ -1,0 +1,20 @@
+uuid: a0baee51-366d-4f8b-8de3-5f0d8ddb4191
+langcode: hu
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - bluemarine
+id: bluemarine_user_login
+theme: bluemarine
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

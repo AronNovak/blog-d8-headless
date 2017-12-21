@@ -1,0 +1,9 @@
+uuid: 9e06990a-fc53-43b8-90e1-59522978c07a
+langcode: hu
+status: true
+dependencies: {  }
+name: Fotózás
+vid: vocabulary_2
+description: ''
+hierarchy: 0
+weight: 0

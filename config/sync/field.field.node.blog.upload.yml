@@ -1,0 +1,27 @@
+uuid: aebc6ff7-8d91-4eea-9e27-ca4fe52f9529
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.blog
+  module:
+    - file
+id: node.blog.upload
+field_name: upload
+entity_type: node
+bundle: blog
+label: 'File attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  max_filesize: '7 MB'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp sh mov'
+  file_directory: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,15 @@
+uuid: 8cc6effe-15f6-447b-b287-97238ddbe32c
+langcode: hu
+status: true
+dependencies: {  }
+name: URL-engedélyezés
+format: '4'
+weight: 0
+filters:
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 10
+    settings:
+      filter_url_length: 72

@@ -1,0 +1,14 @@
+uuid: dbc8a516-2f8b-4672-aebc-01d5c77ba738
+name: 'Novák Áron'
+mail: aaron@szentimre.hu
+slogan: ''
+page:
+  403: /
+  404: /
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: hu
+default_langcode: hu
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

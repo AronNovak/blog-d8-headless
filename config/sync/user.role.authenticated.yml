@@ -1,0 +1,21 @@
+uuid: d29c73db-a5f3-440e-9bf6-947a1f2ad7a4
+langcode: hu
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format 1'
+  - 'use text format 4'
+  - 'view original images'
+  - 'view own unpublished content'
+  - 'view simplemenu'
+  - 'view uploaded files'

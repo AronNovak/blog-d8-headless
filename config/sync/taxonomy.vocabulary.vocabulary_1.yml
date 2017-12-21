@@ -1,0 +1,9 @@
+uuid: 8f2a88f2-6fa3-4a21-9ad4-76c88564a3bb
+langcode: hu
+status: true
+dependencies: {  }
+name: Szakmai
+vid: vocabulary_1
+description: ''
+hierarchy: 2
+weight: 0

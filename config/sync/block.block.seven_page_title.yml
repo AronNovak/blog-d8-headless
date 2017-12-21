@@ -1,0 +1,20 @@
+uuid: d07c2b10-8d94-4efb-bc21-59f29ee5d49c
+langcode: hu
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: seven_page_title
+theme: seven
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Oldal címe'
+  provider: core
+  label_display: '0'
+visibility: {  }

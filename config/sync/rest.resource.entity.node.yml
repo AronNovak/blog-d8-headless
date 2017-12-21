@@ -1,0 +1,20 @@
+uuid: ed58d1b5-4ee1-43dd-b224-835292d0ad6e
+langcode: hu
+status: true
+dependencies:
+  module:
+    - hal
+    - node
+    - serialization
+    - user
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - cookie

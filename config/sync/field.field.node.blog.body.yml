@@ -1,0 +1,22 @@
+uuid: c16346d3-c08b-44ff-b1a4-b1febc34998a
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog
+  module:
+    - text
+id: node.blog.body
+field_name: body
+entity_type: node
+bundle: blog
+label: Törzs
+description: 'A <em>blogbejegyzés</em> egy online napló (más néven <em>blog</em>) egy bejegyzése.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

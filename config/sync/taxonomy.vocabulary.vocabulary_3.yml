@@ -1,0 +1,9 @@
+uuid: e1bb8884-63e1-41a4-8af4-811f327c9718
+langcode: hu
+status: true
+dependencies: {  }
+name: Videó
+vid: vocabulary_3
+description: ''
+hierarchy: 0
+weight: 0

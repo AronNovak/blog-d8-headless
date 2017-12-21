@@ -1,0 +1,22 @@
+uuid: 960ab4fd-6001-41e5-839f-7b45a899b4ea
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.image
+  module:
+    - text
+id: node.image.body
+field_name: body
+entity_type: node
+bundle: image
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

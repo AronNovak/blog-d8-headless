@@ -1,0 +1,38 @@
+uuid: 31543aad-7f22-4099-b154-e35743d6755f
+langcode: hu
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.image.body
+    - field.field.node.image.comment_node_image
+    - field.field.node.image.field_img
+    - field.field.node.image.node_image
+    - field.field.node.image.taxonomy_vocabulary_6
+    - field.field.node.image.upload
+    - node.type.image
+  module:
+    - file
+    - user
+id: node.image.rss
+targetEntityType: node
+bundle: image
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_image: true
+  field_img: true
+  langcode: true
+  node_image: true
+  taxonomy_vocabulary_6: true

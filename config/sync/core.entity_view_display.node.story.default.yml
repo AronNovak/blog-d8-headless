@@ -1,0 +1,57 @@
+uuid: 5db29bd2-6439-4ee7-beb8-160a8281ef0b
+langcode: hu
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_story.default
+    - field.field.node.story.body
+    - field.field.node.story.comment_node_story
+    - field.field.node.story.taxonomy_vocabulary_6
+    - field.field.node.story.upload
+    - node.type.story
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_story:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  taxonomy_vocabulary_6:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,13 @@
+uuid: 6d0a5e1c-8163-4ee3-8b8d-e5383ad19152
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 'Tartalom kiemelése'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

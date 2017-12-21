@@ -1,0 +1,20 @@
+uuid: 1ed3e341-ccbe-4d8b-b915-06dc18f3b48d
+langcode: hu
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - pushbutton
+id: pushbutton_user_login
+theme: pushbutton
+region: ''
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

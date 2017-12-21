@@ -1,0 +1,7 @@
+features:
+  name: 1
+  slogan: 0
+  favicon: 0
+favicon:
+  use_default: 1
+  path: ''

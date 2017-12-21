@@ -1,0 +1,18 @@
+uuid: 0a012ed2-76f3-4d20-ae3a-d69dd12d0144
+langcode: hu
+status: true
+dependencies:
+  config:
+    - node.type.image
+id: node.image.title
+field_name: title
+entity_type: node
+bundle: image
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

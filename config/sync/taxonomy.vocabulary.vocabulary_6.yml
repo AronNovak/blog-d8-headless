@@ -1,0 +1,9 @@
+uuid: bc48c91f-5a3c-4fa4-be36-4dc20efc065f
+langcode: hu
+status: true
+dependencies: {  }
+name: 'Szabad címkék'
+vid: vocabulary_6
+description: 'nem menühöz kötve'
+hierarchy: 1
+weight: 0
