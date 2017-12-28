@@ -1,0 +1,62 @@
+module ItemManager.View
+    exposing
+        ( viewPageItem
+        , viewItems
+        )
+
+import Date exposing (Date)
+import Html exposing (..)
+import Html.Attributes exposing (class)
+import Html.Events exposing (onClick)
+import Item.Model exposing (ItemId, ItemsDict)
+import ItemManager.Model exposing (..)
+import ItemManager.Utils exposing (getItem, unwrapItemsDict)
+import Pages.Item.View
+import Pages.Items.View
+import RemoteData exposing (RemoteData(..))
+import Translate as Trans exposing (Language, translateText)
+import Utils.Html exposing (emptyNode)
+import Utils.WebData exposing (errorString, viewError)
+
+
+{-| Show all Items page.
+-}
+viewItems : Date -> Language ->  Model -> Html Msg
+viewItems currentDate language model =
+    let
+        items =
+            unwrapItemsDict model.items
+    in
+        Html.map MsgPagesItems <| Pages.Items.View.view currentDate language items model.itemsPage
+
+
+{-| Show the Item page.
+-}
+viewPageItem : Date -> Language -> ItemId -> Model -> Html Msg
+viewPageItem currentDate language id model =
+    case getItem id model of
+        NotAsked ->
+            -- This shouldn't happen, but if it does, we provide
+            -- a button to load the editor
+            div
+                [ class "ui button"
+                , onClick <| Subscribe id
+                ]
+                [ translateText language <| Trans.Item Trans.ReloadItem ]
+
+        Loading ->
+            emptyNode
+
+        Failure error ->
+            div []
+                [ text <| errorString language error
+                , div
+                    [ class "ui button"
+                    , onClick <| Subscribe id
+                    ]
+                    [ translateText language <| Trans.Item Trans.ReloadItem ]
+                ]
+
+        Success item ->
+            div []
+                [ Html.map (MsgPagesItem id) <| Pages.Item.View.view currentDate language id item ]
